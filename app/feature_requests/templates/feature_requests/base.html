@@ -1,0 +1,6 @@
+{% extends "feature_requests/base.html" %}
+
+{% block local_js %}
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.0/knockout-min.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+{% endblock %}

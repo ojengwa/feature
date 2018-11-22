@@ -34,6 +34,7 @@ def upgrade():
     sa.Column('description', sa.Text(), nullable=True),
     sa.Column('client', sa.Enum('client_one', 'client_two', 'client_three', name='clients'), nullable=False),
     sa.Column('client_priority', sa.Integer(), nullable=True),
+    sa.Column('assigned_priority', sa.Integer(), nullable=True),
     sa.Column('product_area', sa.Enum('policies', 'billing', 'claims', 'reports', name='productareas'), nullable=False),
     sa.Column('available_on', sa.DateTime(), nullable=True),
     sa.Column('requested_by', sa.Integer(), nullable=True),

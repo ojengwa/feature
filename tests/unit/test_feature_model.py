@@ -8,7 +8,7 @@ def test_new_feature_request(new_feature_request):
     GIVEN a FeatureRequest model
     WHEN a new FeatureRequest is created
     THEN check the title, client_priority, requested_by, 
-    and product_area fields are defined correctly
+    description fields are defined correctly
     """
     assert new_feature_request.title == 'Lorem Ipsum'
     assert new_feature_request.client_priority == 1
